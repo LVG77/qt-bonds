@@ -71,4 +71,4 @@ if __name__ == "__main__":
     out = get_tbl(xl_data, df_names)
     out_fixed = fix_dfs(out)
     for name, df in out_fixed.items():
-        df.to_csv(name, index=False)
+        df.to_csv(name+'.csv', index=False)
