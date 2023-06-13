@@ -1,49 +1,49 @@
 Financial Institution,Compound Frequency,Payment Frequency,Redeemable,Redeemable Term,Minimum Deposit,1_y,2_y,3_y,4_y,5_y,6_y,quote_date,settle_date
-B2B Bank,A,E,no,-,5000,5.12,5.07,4.85,4.62,4.62,,2023-06-12,2023-06-12
-B2B Bank,N,A,no,-,5000,5.12,5.07,4.85,4.62,4.62,,2023-06-12,2023-06-12
-Community Trust,A,E,no,-,5000,5.08,5.03,4.6,4.2,4.25,,2023-06-12,2023-06-12
-Community Trust,A,E,no,-,50000,5.18,5.13,4.7,4.3,4.35,,2023-06-12,2023-06-12
-Community Trust,N,A,no,-,5000,5.08,5.03,4.6,4.2,4.25,,2023-06-12,2023-06-12
-Community Trust,N,A,no,-,50000,5.18,5.13,4.7,4.3,4.35,,2023-06-12,2023-06-12
-Community Trust.,A,E,no,-,5000,5.18,5.13,4.7,4.3,4.35,,2023-06-12,2023-06-12
-Community Trust.,N,A,no,-,5000,5.18,5.13,4.7,4.3,4.35,,2023-06-12,2023-06-12
-Effort Trust,A,E,no,-,5000,5.12,4.43,3.9,3.8,3.7,,2023-06-12,2023-06-12
-Effort Trust,N,A,no,-,5000,5.12,4.43,3.9,3.8,3.7,,2023-06-12,2023-06-12
-Equitable Bank,A,E,no,-,5000,5.15,5.13,4.99,4.7,4.74,4.0,2023-06-12,2023-06-12
-Equitable Bank,N,A,no,-,5000,5.15,5.13,4.99,4.7,4.74,4.0,2023-06-12,2023-06-12
-Equitable Bank,N,A,cashable,30 days,5000,3.9,,,,,,2023-06-12,2023-06-12
-FirstOntario CU,A,E,no,-,5000,5.12,5.06,4.93,4.65,4.69,,2023-06-12,2023-06-12
-FirstOntario CU,N,A,no,-,5000,5.12,5.06,4.93,4.65,4.69,,2023-06-12,2023-06-12
-Haventree Bank,A,E,no,-,5000,5.16,5.11,4.95,4.67,4.71,,2023-06-12,2023-06-12
-Haventree Bank,N,A,no,-,5000,5.16,5.11,4.95,4.67,4.71,,2023-06-12,2023-06-12
-Home Trust Company-Agent,A,E,no,-,5000,5.17,5.12,4.99,4.7,4.74,,2023-06-12,2023-06-12
-Home Trust Company-Agent,N,A,no,-,5000,5.17,5.12,4.99,4.7,4.74,,2023-06-12,2023-06-12
-Home Trust Company-Agent,N,A,cashable,30 days,5000,4.05,,,,,,2023-06-12,2023-06-12
-Home Trust Company-Agent,N,A,cashable,90 days,5000,4.15,,,,,,2023-06-12,2023-06-12
-ICICI Bank Canada,A,E,no,-,5000,4.85,5.05,4.9,4.45,4.5,3.8,2023-06-12,2023-06-12
-ICICI Bank Canada,N,A,no,-,5000,4.85,5.05,4.9,4.45,4.5,3.8,2023-06-12,2023-06-12
-MCAN Mortgage Corp.,A,E,no,-,5000,5.15,5.12,4.99,4.7,4.74,,2023-06-12,2023-06-12
-MCAN Mortgage Corp.,N,A,no,-,5000,5.15,5.12,4.99,4.7,4.74,,2023-06-12,2023-06-12
-Manulife Bank,A,E,no,-,5000,4.0,4.0,4.65,4.65,4.65,,2023-06-12,2023-06-12
-Manulife Bank,N,A,no,-,5000,4.0,4.0,4.65,4.65,4.65,,2023-06-12,2023-06-12
-Manulife Trust,A,E,no,-,5000,4.0,4.0,4.65,4.65,4.65,,2023-06-12,2023-06-12
-Manulife Trust,N,A,no,-,5000,4.0,4.0,4.65,4.65,4.65,,2023-06-12,2023-06-12
-NatCan Trust Agent Ser.,A,E,no,-,5000,4.55,4.15,4.0,3.9,3.95,,2023-06-12,2023-06-12
-NatCan Trust Agent Ser.,N,A,no,-,5000,4.55,4.15,4.0,3.9,3.95,,2023-06-12,2023-06-12
-NatCan Trust Agent Ser.,N,A,cashable,30 days,5000,4.05,,,,,,2023-06-12,2023-06-12
-National Bank Agent Ser,A,E,no,-,5000,4.55,4.15,4.0,3.9,3.95,,2023-06-12,2023-06-12
-National Bank Agent Ser,N,A,no,-,5000,4.55,4.15,4.0,3.9,3.95,,2023-06-12,2023-06-12
-National Bank Agent Ser,N,A,cashable,30 days,5000,4.05,,,,,,2023-06-12,2023-06-12
-RFA Bank of Canada,A,E,no,-,5000,,5.08,3.75,3.25,3.0,,2023-06-12,2023-06-12
-RFA Bank of Canada,N,A,no,-,5000,5.12,5.08,3.75,3.25,3.0,,2023-06-12,2023-06-12
-RFA Bank of Canada,N,A,cashable,90 days,5000,4.25,,,,,,2023-06-12,2023-06-12
-Heading,Value,Description,Heading,Value,Description,,,,,,,2023-06-12,2023-06-12
-Compound Frequency,A,Annually,Payment Frequency,A,Annually,,,,,,,2023-06-12,2023-06-12
-Compound Frequency,S,Semi-annually,,S,Semi-annually,,,,,,,2023-06-12,2023-06-12
-Compound Frequency,Q,Quarterly,,Q,Quarterly,,,,,,,2023-06-12,2023-06-12
-Compound Frequency,BM,Bi-monthly,,BM,Bi-monthly,,,,,,,2023-06-12,2023-06-12
-Compound Frequency,M,Monthly,,M,Monthly,,,,,,,2023-06-12,2023-06-12
-Compound Frequency,BW,Bi-weekly,,BW,Bi-weekly,,,,,,,2023-06-12,2023-06-12
-Compound Frequency,W,Weekly,,W,Weekly,,,,,,,2023-06-12,2023-06-12
-Compound Frequency,D,Daily,,D,Daily,,,,,,,2023-06-12,2023-06-12
-Compound Frequency,N,Not compounded,,P,Periodically,,,,,,,2023-06-12,2023-06-12
+B2B Bank,A,E,no,-,5000,5.07,5.07,4.85,4.62,4.62,,2023-06-13,2023-06-13
+B2B Bank,N,A,no,-,5000,5.07,5.07,4.85,4.62,4.62,,2023-06-13,2023-06-13
+Community Trust,A,E,no,-,5000,5.12,5.08,4.65,4.25,4.3,,2023-06-13,2023-06-13
+Community Trust,A,E,no,-,50000,5.22,5.18,4.75,4.35,4.4,,2023-06-13,2023-06-13
+Community Trust,N,A,no,-,5000,5.12,5.08,4.65,4.25,4.3,,2023-06-13,2023-06-13
+Community Trust,N,A,no,-,50000,5.22,5.18,4.75,4.35,4.4,,2023-06-13,2023-06-13
+Community Trust.,A,E,no,-,5000,5.22,5.18,4.75,4.35,4.4,,2023-06-13,2023-06-13
+Community Trust.,N,A,no,-,5000,5.22,5.18,4.75,4.35,4.4,,2023-06-13,2023-06-13
+Effort Trust,A,E,no,-,5000,5.15,4.43,3.9,3.8,3.7,,2023-06-13,2023-06-13
+Effort Trust,N,A,no,-,5000,5.15,4.43,3.9,3.8,3.7,,2023-06-13,2023-06-13
+Equitable Bank,A,E,no,-,5000,5.15,5.14,4.99,4.7,4.74,4.0,2023-06-13,2023-06-13
+Equitable Bank,N,A,no,-,5000,5.15,5.14,4.99,4.7,4.74,4.0,2023-06-13,2023-06-13
+Equitable Bank,N,A,cashable,30 days,5000,3.9,,,,,,2023-06-13,2023-06-13
+FirstOntario CU,A,E,no,-,5000,5.12,5.06,4.93,4.65,4.69,,2023-06-13,2023-06-13
+FirstOntario CU,N,A,no,-,5000,5.12,5.06,4.93,4.65,4.69,,2023-06-13,2023-06-13
+Haventree Bank,A,E,no,-,5000,5.19,5.14,5.0,4.72,4.75,,2023-06-13,2023-06-13
+Haventree Bank,N,A,no,-,5000,5.19,5.14,5.0,4.72,4.75,,2023-06-13,2023-06-13
+Home Trust Company-Agent,A,E,no,-,5000,5.18,5.12,5.02,4.7,4.74,,2023-06-13,2023-06-13
+Home Trust Company-Agent,N,A,no,-,5000,5.18,5.12,5.02,4.7,4.74,,2023-06-13,2023-06-13
+Home Trust Company-Agent,N,A,cashable,30 days,5000,4.05,,,,,,2023-06-13,2023-06-13
+Home Trust Company-Agent,N,A,cashable,90 days,5000,4.15,,,,,,2023-06-13,2023-06-13
+ICICI Bank Canada,A,E,no,-,5000,5.1,5.11,4.95,4.45,4.5,3.8,2023-06-13,2023-06-13
+ICICI Bank Canada,N,A,no,-,5000,5.1,5.11,4.95,4.45,4.5,3.8,2023-06-13,2023-06-13
+MCAN Mortgage Corp.,A,E,no,-,5000,5.15,5.12,4.99,4.7,4.74,,2023-06-13,2023-06-13
+MCAN Mortgage Corp.,N,A,no,-,5000,5.15,5.12,4.99,4.7,4.74,,2023-06-13,2023-06-13
+Manulife Bank,A,E,no,-,5000,4.0,4.0,4.65,4.65,4.65,,2023-06-13,2023-06-13
+Manulife Bank,N,A,no,-,5000,4.0,4.0,4.65,4.65,4.65,,2023-06-13,2023-06-13
+Manulife Trust,A,E,no,-,5000,4.0,4.0,4.65,4.65,4.65,,2023-06-13,2023-06-13
+Manulife Trust,N,A,no,-,5000,4.0,4.0,4.65,4.65,4.65,,2023-06-13,2023-06-13
+NatCan Trust Agent Ser.,A,E,no,-,5000,4.8,4.8,4.0,3.9,3.95,,2023-06-13,2023-06-13
+NatCan Trust Agent Ser.,N,A,no,-,5000,4.8,4.8,4.0,3.9,3.95,,2023-06-13,2023-06-13
+NatCan Trust Agent Ser.,N,A,cashable,30 days,5000,4.05,,,,,,2023-06-13,2023-06-13
+National Bank Agent Ser,A,E,no,-,5000,4.8,4.8,4.0,3.9,3.95,,2023-06-13,2023-06-13
+National Bank Agent Ser,N,A,no,-,5000,4.8,4.8,4.0,3.9,3.95,,2023-06-13,2023-06-13
+National Bank Agent Ser,N,A,cashable,30 days,5000,4.05,,,,,,2023-06-13,2023-06-13
+RFA Bank of Canada,A,E,no,-,5000,,5.08,3.75,3.25,3.0,,2023-06-13,2023-06-13
+RFA Bank of Canada,N,A,no,-,5000,5.12,5.08,3.75,3.25,3.0,,2023-06-13,2023-06-13
+RFA Bank of Canada,N,A,cashable,90 days,5000,4.25,,,,,,2023-06-13,2023-06-13
+Heading,Value,Description,Heading,Value,Description,,,,,,,2023-06-13,2023-06-13
+Compound Frequency,A,Annually,Payment Frequency,A,Annually,,,,,,,2023-06-13,2023-06-13
+Compound Frequency,S,Semi-annually,,S,Semi-annually,,,,,,,2023-06-13,2023-06-13
+Compound Frequency,Q,Quarterly,,Q,Quarterly,,,,,,,2023-06-13,2023-06-13
+Compound Frequency,BM,Bi-monthly,,BM,Bi-monthly,,,,,,,2023-06-13,2023-06-13
+Compound Frequency,M,Monthly,,M,Monthly,,,,,,,2023-06-13,2023-06-13
+Compound Frequency,BW,Bi-weekly,,BW,Bi-weekly,,,,,,,2023-06-13,2023-06-13
+Compound Frequency,W,Weekly,,W,Weekly,,,,,,,2023-06-13,2023-06-13
+Compound Frequency,D,Daily,,D,Daily,,,,,,,2023-06-13,2023-06-13
+Compound Frequency,N,Not compounded,,P,Periodically,,,,,,,2023-06-13,2023-06-13
