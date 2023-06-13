@@ -24,7 +24,7 @@ jobs:
           pip install pandas openpyxl
       - name: Fetch latest data
         run: |
-          python wt_scrape_bonds.py
+          python scrape_bonds.py
       - name: Commit and push if changed
         run: |
           git config --local user.email "actions@users.noreply.github.com"
