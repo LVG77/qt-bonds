@@ -1,0 +1,37 @@
+name: Scrape latest data
+
+on:
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron: "3 10 * * *"
+
+jobs:
+  scheduled:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v4
+        with:
+            python-version: 3.9
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas openpyxl
+      - name: Fetch latest data
+        run: |
+          python wt_scrape_bonds.py
+      - name: Commit and push if changed
+        run: |
+          git config --local user.email "actions@users.noreply.github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          timestemp=$(date -u)
+          git commit -m "Latest data: ${timestemp}" || exit 0
+          git push
+
+    
