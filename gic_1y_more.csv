@@ -35,13 +35,3 @@ National Bank Agent Ser,N,A,cashable,30 days,5000,4.05,,,,,,2023-06-14,2023-06-1
 RFA Bank of Canada,A,E,no,-,5000,,5.08,3.75,3.25,3.0,,2023-06-14,2023-06-14
 RFA Bank of Canada,N,A,no,-,5000,5.12,5.08,3.75,3.25,3.0,,2023-06-14,2023-06-14
 RFA Bank of Canada,N,A,cashable,90 days,5000,4.25,,,,,,2023-06-14,2023-06-14
-Heading,Value,Description,Heading,Value,Description,,,,,,,2023-06-14,2023-06-14
-Compound Frequency,A,Annually,Payment Frequency,A,Annually,,,,,,,2023-06-14,2023-06-14
-Compound Frequency,S,Semi-annually,,S,Semi-annually,,,,,,,2023-06-14,2023-06-14
-Compound Frequency,Q,Quarterly,,Q,Quarterly,,,,,,,2023-06-14,2023-06-14
-Compound Frequency,BM,Bi-monthly,,BM,Bi-monthly,,,,,,,2023-06-14,2023-06-14
-Compound Frequency,M,Monthly,,M,Monthly,,,,,,,2023-06-14,2023-06-14
-Compound Frequency,BW,Bi-weekly,,BW,Bi-weekly,,,,,,,2023-06-14,2023-06-14
-Compound Frequency,W,Weekly,,W,Weekly,,,,,,,2023-06-14,2023-06-14
-Compound Frequency,D,Daily,,D,Daily,,,,,,,2023-06-14,2023-06-14
-Compound Frequency,N,Not compounded,,P,Periodically,,,,,,,2023-06-14,2023-06-14
