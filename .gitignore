@@ -164,3 +164,4 @@ cython_debug/
 
 # sqlite files
 *.db
+query_db.sql
