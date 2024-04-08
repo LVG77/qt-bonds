@@ -55,6 +55,7 @@ def fix_dfs(dict_df: Dict[str, pd.DataFrame]) -> pd.DataFrame:
                 "120_days",
                 "180_days",
                 "270_days",
+                "Marker",
                 "quote_date",
                 "settle_date",
             ]
@@ -78,6 +79,7 @@ def fix_dfs(dict_df: Dict[str, pd.DataFrame]) -> pd.DataFrame:
                 "4_y",
                 "5_y",
                 "6_y",
+                "Marker",
                 "quote_date",
                 "settle_date",
             ]
