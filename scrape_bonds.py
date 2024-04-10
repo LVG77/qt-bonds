@@ -8,7 +8,7 @@ headers = {"User-Agent": "My User Agent 1.0"}
 
 df_names = {
     "GIC LESS THEN 1 YEAR": "gic_1y_less",
-    "GIC 1-5 YEAR": "gic_1y_more",
+    "GIC 1-6 YEAR": "gic_1y_more",
     "MUNICIPAL": "municipal",
     "COUPONS": "coupon",
     "CORPORATE": "corporate",
