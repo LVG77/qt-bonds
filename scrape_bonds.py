@@ -31,7 +31,7 @@ def get_tbl(
             elif row[1] == "Settlement:":
                 settle_date = row[2]
                 rows_to_drop.append(row[0])
-            elif row[2] is np.NAN and row[3] is np.NAN:
+            elif row[2] is np.nan and row[3] is np.nan:
                 rows_to_drop.append(row[0])
         df_out = df.drop(rows_to_drop, axis=0)
         df_out.columns = df_out.iloc[0]
