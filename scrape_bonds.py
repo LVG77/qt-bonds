@@ -8,7 +8,8 @@ headers = {"User-Agent": "My User Agent 1.0"}
 
 df_names = {
     "GIC LESS THEN 1 YEAR": "gic_1y_less",
-    "GIC 1-6 YEAR": "gic_1y_more",
+    "GIC 1-5 YEAR": "gic_1y_more_5y",
+    "GIC 1-6 YEAR": "gic_1y_more_6y",
     "MUNICIPAL": "municipal",
     "COUPONS": "coupon",
     "CORPORATE": "corporate",
@@ -41,6 +42,14 @@ def get_tbl(
         df_out["settle_date"] = settle_date
     return dict_out
 
+def fix_1y_more_tbl(df: pd.DataFrame) -> pd.DataFrame:
+        col_mask = [c for c in df.columns if c.endswith("_y")]
+        df[col_mask] = df[col_mask].apply(lambda c: c.str.replace("%", ""))
+        df[col_mask] = df[col_mask].apply(
+            lambda c: pd.to_numeric(c, errors="coerce")
+        )
+        df["Financial Institution"] = df["Financial Institution"].ffill()
+        return df.query("~`Financial Institution`.isin(['Heading', 'Compound Frequency'])")
 
 def fix_dfs(dict_df: Dict[str, pd.DataFrame]) -> pd.DataFrame:
     for name, df in dict_df.items():
@@ -64,7 +73,24 @@ def fix_dfs(dict_df: Dict[str, pd.DataFrame]) -> pd.DataFrame:
                 lambda c: pd.to_numeric(c, errors="coerce")
             )
             df["Financial Institution"] = df["Financial Institution"].ffill()
-        elif name == "gic_1y_more":
+        elif name == "gic_1y_more_5y":
+            df.columns = [
+                "Financial Institution",
+                "Compound Frequency",
+                "Payment Frequency",
+                "Redeemable",
+                "Redeemable Term",
+                "Minimum Deposit",
+                "1_y",
+                "2_y",
+                "3_y",
+                "4_y",
+                "5_y",
+                "quote_date",
+                "settle_date",
+            ]
+            dict_df[name] = fix_1y_more_tbl(df)
+        elif name == "gic_1y_more_6y":
             df.columns = [
                 "Financial Institution",
                 "Compound Frequency",
@@ -81,15 +107,7 @@ def fix_dfs(dict_df: Dict[str, pd.DataFrame]) -> pd.DataFrame:
                 "quote_date",
                 "settle_date",
             ]
-            col_mask = [c for c in df.columns if c.endswith("_y")]
-            df[col_mask] = df[col_mask].apply(lambda c: c.str.replace("%", ""))
-            df[col_mask] = df[col_mask].apply(
-                lambda c: pd.to_numeric(c, errors="coerce")
-            )
-            df["Financial Institution"] = df["Financial Institution"].ffill()
-            dict_df[name] = df.query(
-                "~`Financial Institution`.isin(['Heading', 'Compound Frequency'])"
-            )
+            dict_df[name] = fix_1y_more_tbl(df)
     return dict_df
 
 
