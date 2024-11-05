@@ -1,4 +1,5 @@
 import urllib.request
+from io import BytesIO
 import pandas as pd
 import numpy as np
 from typing import Dict, List
@@ -54,6 +55,9 @@ def fix_1y_more_tbl(df: pd.DataFrame) -> pd.DataFrame:
 def fix_dfs(dict_df: Dict[str, pd.DataFrame]) -> pd.DataFrame:
     for name, df in dict_df.items():
         if name == "gic_1y_less":
+            if df.shape[1] == 12: 
+                df.columns = [i for i in range(12)]
+                if df[9].isnull().sum() > 0.85*df.shape[0]: df.drop(columns=9, inplace=True)
             df.columns = [
                 "Financial Institution",
                 "Redeemable",
@@ -74,6 +78,11 @@ def fix_dfs(dict_df: Dict[str, pd.DataFrame]) -> pd.DataFrame:
             )
             df["Financial Institution"] = df["Financial Institution"].ffill()
         elif name == "gic_1y_more_5y":
+            if df.shape[1] > 13:
+                df.columns = [i if pd.isna(df.iloc[:, i].name) else df.iloc[:, i].name for i in range(df.shape[1])]
+                for col in df.columns:
+                    if df[col].isnull().sum() > 0.85*df.shape[0] or (df[col] == '-').sum() > 0.85*df.shape[0]:
+                        df.drop(columns=col, inplace=True)
             df.columns = [
                 "Financial Institution",
                 "Compound Frequency",
@@ -91,6 +100,11 @@ def fix_dfs(dict_df: Dict[str, pd.DataFrame]) -> pd.DataFrame:
             ]
             dict_df[name] = fix_1y_more_tbl(df)
         elif name == "gic_1y_more_6y":
+            if df.shape[1] > 14:
+                df.columns = [i if pd.isna(df.iloc[:, i].name) else df.iloc[:, i].name for i in range(df.shape[1])]
+                for col in df.columns:
+                    if df[col].isnull().sum() > 0.85*df.shape[0] or (df[col] == '-').sum() > 0.85*df.shape[0]:
+                        df.drop(columns=col, inplace=True)
             df.columns = [
                 "Financial Institution",
                 "Compound Frequency",
@@ -116,7 +130,7 @@ if __name__ == "__main__":
     with urllib.request.urlopen(req) as r:
         xl = r.read()
 
-    xl_data = pd.read_excel(xl, sheet_name=None)
+    xl_data = pd.read_excel(BytesIO(xl), sheet_name=None)
     out = get_tbl(xl_data, df_names)
     out_fixed = fix_dfs(out)
     for name, df in out_fixed.items():
