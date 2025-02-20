@@ -5,7 +5,7 @@ import numpy as np
 from typing import Dict, List
 
 url = "https://www.questrade.com/docs/librariesprovider7/default-document-library/questrade_bonds_list_excel.xlsx"
-headers = {"User-Agent": "My User Agent 1.0"}
+headers = {"User-Agent": "Mozilla/5.0"}
 
 df_names = {
     "GIC LESS THEN 1 YEAR": "gic_1y_less",
